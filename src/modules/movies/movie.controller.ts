@@ -1,6 +1,7 @@
 import { Controller, Get, Query } from '@nestjs/common'
 import { ApiTags } from '@nestjs/swagger'
 import { MovieService } from './movie.service'
+import { TitleDto } from './title.dto'
 
 @ApiTags('movies')
 @Controller('movie')
@@ -13,7 +14,7 @@ export class MovieController {
 	}
 
 	@Get('search')
-	async searchMovies(@Query('title') title: string) {
-		return this.movieService.searchMoviesByTitle(title)
+	async searchMovies(@Query() titelDto: TitleDto) {
+		return this.movieService.searchMoviesByTitle(titelDto.title)
 	}
 }
