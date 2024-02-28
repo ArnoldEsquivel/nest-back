@@ -6,9 +6,24 @@
 
 Welcome to the documentation for our Nest.js backend project! This project serves as the backend API for our movie application frontend implemented in Next.js. Our backend is documented using Swagger, and you can access the documentation at the `/docs` endpoint. The backend consists of a main module and a movies module, where requests are handled by a controller and then processed by a service. Both the endpoints and entities are documented in Swagger for easy reference.
 
-> Ensure that the backend server is running alongside the Next.js frontend. You can find the frontend repository [here](<https://github.com/ArnoldEsquivel/next-front.git>).
+
+##Backend Features Validation and Justification
+
+This repository contains the backend application developed in Node.js, utilizing the Nest.js framework. Nest.js was chosen for its comprehensive and scalable architecture, facilitating modularization of the application. This approach enhances the organization of logic by managing requirements across different layers such as controllers, services, modules, and DTOs for data integrity and validation. Additionally, it leverages typed variables for environment configurations to prevent silent errors.
+
+## Features
+
+- **Modular Architecture:** Utilizes Nest.js to modularize the application, enhancing maintainability and scalability.
+- **DTOs for Data Integrity:** Implements Data Transfer Objects (DTOs) for ensuring data integrity and validation.
+- **Automatic Documentation:** Utilizes Swagger for automatic and comprehensive API documentation.
+- **Code Quality Assurance:** Incorporates Prettier, ESLint, and Commitlint to enforce code structure, formatting, and documentation standards.
+
+This section outlines the validation and justification for the features implemented in the backend application.
+
 
 ## Installation
+
+> Ensure that the backend server is running alongside the Next.js frontend. You can find the frontend repository [here](<https://github.com/ArnoldEsquivel/next-front.git>).
 
 To set up the backend, follow these steps:
 
